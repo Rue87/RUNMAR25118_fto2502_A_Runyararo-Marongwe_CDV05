@@ -412,25 +412,50 @@ footer p {
     font-size: 1rem;
   }
   nav {
-    padding: 5px 20px; 
+    padding: 5px 5px; 
   }
+  nav ul li { 
+      flex-basis: calc(50% - 12px); 
+      text-align: center; 
+  }
+  nav ul li a {
+    font-size: 0.7rem;
+    padding: 3px 0px;
+    display: block;
+  }
+   .logo { 
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 5px; 
+        font-size: 1.1rem;
+    }
   .nav-content {
     flex-direction: column;
-    gap: 10px;
-    padding: 0.5rem 1rem;
+    gap: 5px;
+    padding: 0.2rem 0.2rem;
+    align-items: center;
 }
   nav ul {
-    flex-direction: column;
-    gap: 5px;
-    padding-top: 5px;
-  }
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 3px 8px; 
+    padding: 0; 
+    width: 100%; 
+    max-width: 280px;
+    list-style: none;
+    box-sizing: border-box; 
+    }
+
    .hero {
-    padding-top: 100px;
+    padding-top: 130px;
     flex-direction: column; 
     padding-left: 20px; 
     padding-right: 20px; 
     text-align: center; 
     justify-content: center; 
+    min-height: auto; 
+    padding-bottom: 50px;
   }
   .hero-container {
     flex-direction: column;
@@ -443,11 +468,25 @@ footer p {
   }
   .image {
     order: -1; 
-    margin-bottom: 20px; 
+    margin-bottom: 0px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden; 
+    margin-top: 40px;
   }
+  .image img { 
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin: 0; 
+    padding: 0; 
+    }
 
   .hero-text-content h1 {
-    font-size: 2.5em; /* Adjust font size for mobile */
+    font-size: 2.5em; 
   }
 }
 
@@ -455,12 +494,14 @@ footer p {
     #about {
         flex-direction: column; 
         padding: 50px 20px; 
-        gap: 30px; 
+        gap: 0px; 
         text-align: center; 
+        align-items: center;
     }
-
-    .about-image {
-        order: -1; 
+    .about-image { 
+        order: 1; 
+        margin-top: 0; 
+        margin-bottom: 25px; 
     }
 
     .about-image img {
@@ -469,15 +510,36 @@ footer p {
 
     .about-text {
         text-align: center;
+        order: 2; 
+        margin-top: 0; 
+        max-width: 100%; 
+        padding: 0 10px; 
+    }
+
+      .about-text p { 
+        margin-bottom: 1em;
+        margin-top: 0; 
+        line-height: 1.6; 
+        font-size: 1em; 
+    }
+     .about-text p:last-of-type {
+        margin-bottom: 0; 
     }
 
     .about-text h2 {
         text-align: center; 
+        margin-bottom: 20px;
+    }
+     #about h2 { 
+        order: 0;
+        margin-top: 0;
+        margin-bottom: 25px; 
+        font-size: 2em; 
     }
 
     .project-grid {
-        grid-template-columns: 1fr; /* --> On small screens, stack cards vertically */
-        max-width: 400px; /* Limit width of single column */
+        grid-template-columns: 1fr; 
+        max-width: 400px; 
         padding: 0 10px;
     }
 
