@@ -27,13 +27,11 @@ Welcome to my personal portfolio website! This platform showcases my skills and 
 
 
 ##  Project Structure
-
 .
 ├── index.html
 ├── styles.css
 ├── images/
 └── README.md
-
 
 ##  Getting Started
 
