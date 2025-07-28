@@ -152,55 +152,64 @@ nav ul li a:hover {
 
 /* Section Base */
 .section {
-  padding: 100px 20px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  text-align: right;
-  gap: 40px;
-  align-items: center;
-  text-align: center;
-  background: #f9f9f9;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: block; /* Ensures each section defines its own flex behavior */
+    text-align: center; /* Default text alignment for direct children */
+    background: #f9f9f9;
 }
 
-#about { 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 60px; 
-    padding: 100px 70px; 
-    text-align: left;
+/* #about rule - Desktop Layout: Image Left, Title & Description Right */
+#about {
+    display: flex;
+    flex-direction: row; /* Image and Info block side-by-side */
+    justify-content: center; /* Center the whole block horizontally */
+    align-items: center; /* Vertically align image and info block */
+    gap: 60px; /* Gap between image and info block */
+    padding: 100px 70px;
+    flex-wrap: wrap; /* Allows image and info block to wrap if screen narrows */
 }
+
 .about-image {
-    flex-shrink: 0; 
+    flex-shrink: 0; /* Prevents image from shrinking */
+    order: 0; /* Image first (left) on desktop */
+    max-width: 300px; /* Control image size on desktop */
 }
 
 .about-image img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Image fills its container */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-.about-text {
-    flex: 1;
+.about-info {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start; 
+    flex: 1; 
     max-width: 600px; 
-    text-align: left; 
+    order: 1; 
 }
-.about-text h2 {
-    text-align: left; 
+
+.about-info h2 {
+    font-size: 2rem;
     margin-bottom: 25px; 
+    text-align: left; 
+    width: 100%; 
 }
 
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
-  width: 100%;
+
+.about-text {
+    text-align: left; 
 }
 
-.section p {
-  max-width: 700px;
+.about-text p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+.about-text p:last-of-type {
+    margin-bottom: 0;
 }
 
 /* Technologies Section */
@@ -305,8 +314,8 @@ nav ul li a:hover {
     border-radius: 10px;
     padding: 20px;
     display: flex;
-    flex-direction: column; /* Ensures content within card stacks */
-    text-align: left; /* Keep text aligned left within the card */
+    flex-direction: column; 
+    text-align: left; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -474,7 +483,7 @@ footer p {
     justify-content: center;
     align-items: center; 
     overflow: hidden; 
-    margin-top: 40px;
+    margin-top: 100px;
   }
   .image img { 
     width: 150px; 
@@ -491,50 +500,52 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    #about {
+  
+     #about {
+        display:flex;
         flex-direction: column; 
-        padding: 50px 20px; 
-        gap: 0px; 
+        padding: 50px 20px;
+        gap: 25px; 
+        align-items: center; 
         text-align: center; 
-        align-items: center;
+        max-width: 100%; 
     }
-    .about-image { 
+
+    .about-title {
+        order: 0; 
+        margin-bottom: 20px; 
+        font-size: 2em;
+        flex-basis: auto; 
+        max-width: 100%; 
+    }
+
+    .about-image {
         order: 1; 
-        margin-top: 0; 
-        margin-bottom: 25px; 
-    }
+        max-width: 250px; 
+        flex: 0 0 250px; 
+        margin-bottom: 0;
+        display: none;
 
-    .about-image img {
-        max-width: 250px;
     }
-
+#aboutheading{
+  text-align: center;
+}
     .about-text {
-        text-align: center;
         order: 2; 
-        margin-top: 0; 
         max-width: 100%; 
         padding: 0 10px; 
-    }
-
-      .about-text p { 
-        margin-bottom: 1em;
-        margin-top: 0; 
-        line-height: 1.6; 
-        font-size: 1em; 
-    }
-     .about-text p:last-of-type {
-        margin-bottom: 0; 
-    }
-
-    .about-text h2 {
-        text-align: center; 
-        margin-bottom: 20px;
-    }
-     #about h2 { 
-        order: 0;
+        flex-basis: auto; 
         margin-top: 0;
-        margin-bottom: 25px; 
-        font-size: 2em; 
+        text-align: center 
+    }
+
+    .about-text p {
+        margin-bottom: 1em;
+        line-height: 1.6;
+        font-size: 1em;
+    }
+    .about-text p:last-of-type {
+        margin-bottom: 0;
     }
 
     .project-grid {
