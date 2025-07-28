@@ -57,7 +57,7 @@ You only need a modern web browser installed on your system.
 3.  **Open `index.html`:**
     Simply open the `index.html` file in your preferred web browser to launch the portfolio.
 
-## 📞 Contact
+##  Contact
 
 Runyararo Marongwe - `mrunya@gmail.com`
 
