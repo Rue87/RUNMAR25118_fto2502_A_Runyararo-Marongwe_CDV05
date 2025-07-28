@@ -1,6 +1,6 @@
 # Runyararo Marongwe - Portfolio Website
 
-![Portfolio Website Screenshot](images/portfolio-screenshot.png)
+![Portfolio Website Screenshot](images/my-website.png)
 
 
 ##  Overview
@@ -19,14 +19,14 @@ Welcome to my personal portfolio website! This platform showcases my skills and 
 * **Direct Contact Access:** Provides clear contact information and social links, encouraging easy communication for opportunities or collaborations.
 
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * **HTML5:** For structuring the content of the website.
 * **CSS3:** For all styling, layout, and responsive design, utilizing Flexbox and Media Queries.
 * **Font Awesome:** For scalable vector icons (used for social links).
 
 
-## 📦 Project Structure
+##  Project Structure
 
 .
 ├── index.html
