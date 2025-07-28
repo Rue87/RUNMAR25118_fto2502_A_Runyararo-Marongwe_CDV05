@@ -154,30 +154,29 @@ nav ul li a:hover {
 .section {
     padding: 100px 20px;
     min-height: 100vh;
-    display: block; /* Ensures each section defines its own flex behavior */
-    text-align: center; /* Default text alignment for direct children */
+    display: block; 
+    text-align: center; 
     background: #f9f9f9;
 }
 
-/* #about rule - Desktop Layout: Image Left, Title & Description Right */
 #about {
     display: flex;
-    flex-direction: row; /* Image and Info block side-by-side */
-    justify-content: center; /* Center the whole block horizontally */
-    align-items: center; /* Vertically align image and info block */
-    gap: 60px; /* Gap between image and info block */
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+    gap: 60px; 
     padding: 100px 70px;
-    flex-wrap: wrap; /* Allows image and info block to wrap if screen narrows */
+    flex-wrap: wrap; 
 }
 
 .about-image {
-    flex-shrink: 0; /* Prevents image from shrinking */
-    order: 0; /* Image first (left) on desktop */
-    max-width: 300px; /* Control image size on desktop */
+    flex-shrink: 0;
+    order: 0; 
+    max-width: 300px; 
 }
 
 .about-image img {
-    width: 100%; /* Image fills its container */
+    width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -220,7 +219,7 @@ nav ul li a:hover {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    gap: 40px; /* Gap between h2 and ul.tech-list */
+    gap: 40px; 
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -268,7 +267,7 @@ nav ul li a:hover {
   padding: 100px 20px;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; /* This is making everything stack */
+  flex-direction: column; 
   justify-content: flex-start;
   text-align: right;
   gap: 40px;
@@ -287,7 +286,7 @@ nav ul li a:hover {
     align-items: center; 
     text-align: center; 
     background: #f9f9f9; 
-    gap: 40px; /* Space between h2, grid, and button */
+    gap: 40px; 
 }
 
 #projects h2 {
@@ -555,12 +554,12 @@ footer p {
     }
 
     .project-card {
-        padding: 15px; /* Smaller padding on mobile */
+        padding: 15px; 
     }
 
     #projects {
-        padding: 50px 10px; /* Reduce overall section padding on mobile */
-        gap: 20px; /* Smaller gap on mobile */
+        padding: 50px 10px; 
+        gap: 20px; 
     }
 }
 
