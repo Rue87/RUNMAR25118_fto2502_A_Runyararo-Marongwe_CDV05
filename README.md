@@ -1,6 +1,6 @@
 # Runyararo Marongwe - Portfolio Website
 
-![Portfolio Website Screenshot](images/my-website.png)
+![Portfolio Website Screenshot](images/my-website.jpg)
 
 
 ##  Overview
@@ -31,7 +31,7 @@ Welcome to my personal portfolio website! This platform showcases my skills and 
 .
 ├── index.html
 ├── styles.css
-├── images/         
+├── images/
 └── README.md
 
 
