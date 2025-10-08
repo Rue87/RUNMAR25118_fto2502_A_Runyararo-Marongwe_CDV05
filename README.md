@@ -1,65 +1,70 @@
-# Runyararo Marongwe - Portfolio Website
+# Getting Started with Create React App
 
-![Portfolio Website Screenshot](images/my-website.jpg)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-##  Overview
+In the project directory, you can run:
 
-Welcome to my personal portfolio website! This platform showcases my skills and projects, providing an easy way to get in touch. Built with a focus on clean design, responsiveness, and user experience, it serves as a central hub for my front-end development work.
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-##  Features
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-* **Responsive & Adaptive Design:** The layout fluidly adjusts to provide an optimal viewing experience across all devices, from large desktops to mobile phones.
-* **Clean Navigation Bar:** A fixed navigation bar provides easy access to different sections of the site and adapts gracefully on smaller screens for enhanced usability.
-* **Engaging Hero Section:** A welcoming introduction featuring my profile image, name, and role, immediately setting the tone for the portfolio.
-* **Structured About Section:** Clearly presents my professional background and passion for front-end development. Content is intentionally ordered on mobile (Title, Image, Description) for optimal readability and flow.
-* **Comprehensive Technologies Showcase:** Highlights my technical expertise.
-* **Project Portfolio:** Displays key projects with descriptive summaries and direct links to their GitHub repositories.
-* **Direct Contact Access:** Provides clear contact information and social links, encouraging easy communication for opportunities or collaborations.
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-##  Technologies Used
+### `npm run build`
 
-* **HTML5:** For structuring the content of the website.
-* **CSS3:** For all styling, layout, and responsive design, utilizing Flexbox and Media Queries.
-* **Font Awesome:** For scalable vector icons (used for social links).
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-##  Project Structure
-.
-├── index.html
-├── styles.css
-├── images/
-└── README.md
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-##  Getting Started
+### `npm run eject`
 
-To view this portfolio locally, follow these simple steps.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Prerequisites
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-You only need a modern web browser installed on your system.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Installation
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/Rue87/][RUNMAR25118_fto2502_A_Runyararo-Marongwe_CDV05].git
-    ```
-     
-2.  **Navigate to the project directory:**
-    ```bash
-    cd [RUNMAR25118_fto2502_A_Runyararo-Marongwe_CDV05]
-    ```
-3.  **Open `index.html`:**
-    Simply open the `index.html` file in your preferred web browser to launch the portfolio.
+## Learn More
 
-##  Contact
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Runyararo Marongwe - `mrunya@gmail.com`
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-**Connect with me:**
-* **GitHub:** [https://github.com/Rue87]
-* **LinkedIn:** [https://linkedin.com/in/runyararo-marongwe-24835279]
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
