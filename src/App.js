@@ -75,7 +75,7 @@ function App() {
       <nav className="navbar">
         <div className="nav-content">
           <div className="logo">
-            <a href="#" onClick={() => scrollToSection('hero')}>Rue.</a>
+            <a href="javascript:void(0)" onClick={() => scrollToSection('hero')}>Rue.</a>
           </div>
           
           {/* Desktop Menu */}
