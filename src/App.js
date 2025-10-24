@@ -1,31 +1,11 @@
-/*import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;*/
-
 import React, { useState, useEffect } from 'react';
 import { ChevronUp, Github, Linkedin, Mail, Menu, X } from 'lucide-react';
+
+import profilePic from './assets/Screenshot (337).png';
+import aboutPic from './assets/Screenshot (336).png';
+import kanbanPic from './assets/Screenshot (338).png';
+import podcastPic from './assets/Screenshot (339).png';
+
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -157,7 +137,7 @@ function App() {
           <div className="hero-image">
             <div className="profile-wrapper">
               <img
-                src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={profilePic}
                 alt="Runyararo Marongwe"
               />
             </div>
@@ -170,7 +150,7 @@ function App() {
         <div className="about-container">
           <div className="about-image">
             <img
-              src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={aboutPic}
               alt="About Me"
             />
           </div>
@@ -218,7 +198,9 @@ function App() {
           <div className="project-grid">
             <div className="project-card">
               <div className="project-image">
-                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kanban Task Board" />
+                <img
+                src={kanbanPicanban} alt="Kanban Task Board" />
+          
               </div>
               <div className="project-content">
                 <h3>Kanban Task Board</h3>
@@ -246,7 +228,8 @@ function App() {
 
             <div className="project-card">
               <div className="project-image">
-                <img src="https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Podcast Web App" />
+                <img 
+                src= {podcastPic} alt="Podcast Web App" />
               </div>
               <div className="project-content">
                 <h3>Podcast Web App</h3>
