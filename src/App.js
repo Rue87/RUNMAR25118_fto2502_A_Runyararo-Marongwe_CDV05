@@ -4,7 +4,7 @@ import { ChevronUp, Github, Linkedin, Mail, Menu, X } from 'lucide-react';
 import profilePic from './assets/Screenshot (337).png';
 import aboutPic from './assets/Screenshot (336).png';
 import kanbanPic from './assets/Screenshot (338).png';
-import podcastPic from './assets/Screenshot (339).png';
+import podcastPic from './assets/Screenshot (341).png';
 
 
 function App() {
@@ -136,10 +136,7 @@ function App() {
           </div>
           <div className="hero-image">
             <div className="profile-wrapper">
-              <img
-                src={profilePic}
-                alt="Runyararo Marongwe"
-              />
+               <img src={profilePic} alt="screenshot (337).png" />
             </div>
           </div>
         </div>
@@ -149,10 +146,7 @@ function App() {
       <section id="about" className="about-section">
         <div className="about-container">
           <div className="about-image">
-            <img
-              src={aboutPic}
-              alt="About Me"
-            />
+            <img src={aboutPic} alt="screenshot (336).png" />
           </div>
           <div className="about-info">
             <h2>About Me</h2>
@@ -199,7 +193,7 @@ function App() {
             <div className="project-card">
               <div className="project-image">
                 <img
-                src={kanbanPicanban} alt="Kanban Task Board" />
+                src={kanbanPic} alt="Kanban Task Board" />
           
               </div>
               <div className="project-content">
@@ -214,15 +208,10 @@ function App() {
                   <span>CSS</span>
                   <span>LocalStorage</span>
                 </div>
-                <a
-                  href="https://github.com/Rue87/RUNMAR25118_fto2502_B1_Runyararo_Marongwe_JSL05"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
+              <img src={kanbanPic} alt="screenshot (338).png" />
                   <Github size={20} />
                   View GitHub Repo
-                </a>
+            
               </div>
             </div>
 
@@ -244,15 +233,7 @@ function App() {
                   <span>HTML</span>
                   <span>CSS</span>
                 </div>
-                <a
-                  href="https://github.com/Rue87/RUNMAR25118_fto2502_A_Runyararo-Marongwe_DJS02"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  <Github size={20} />
-                  View GitHub Repo
-                </a>
+              <img src={podcastPic} alt="screenshot (341).png" /> 
               </div>
             </div>
           </div>
